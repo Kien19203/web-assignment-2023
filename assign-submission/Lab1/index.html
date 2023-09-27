@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LAB 1 - WEB PROGRAMMING</title>
+
+    <style>
+        table {
+            width: 1000px;
+            height: 400px;
+            border : 2px ridge black;
+        }
+        h1 {
+            margin-top: 0px;
+        }
+        thead, tfoot {
+            background-color: #d6d6c2;
+
+        }
+
+        tr, td {
+            border: 1px double darkgray;
+        }
+
+        #left-ct {
+            background-color: #ffdd99;
+            width: 200px;
+        }
+
+        #left-ct, th, td {
+            vertical-align: text-top;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin-top: auto;
+        }
+
+        .footer-tit {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th colspan="2"><h1> PROCESS LAYOUT EXAMPLE </h1></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="content">
+        <td id="left-ct">
+            <strong>Main Menu</strong>
+            <ul>
+                <li>Link one</li>
+                <li>Link two</li>
+                <li>Link three</li>
+                <li>Link four</li>
+            </ul>
+        </td>
+        <td id="right-ct">
+            This is example layout using the tables
+        </td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td class="footer-tit" colspan="2"> www.Example of layout using tables.com</td>
+    </tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>
