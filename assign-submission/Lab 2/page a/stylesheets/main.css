@@ -1,0 +1,152 @@
+/*
+                sử dụng float  layout.
+
++ Link file css
++ cài opera :
+Lấy màu cho hình trong inspect.
+
++Dùng paint:
+Đo kích thước các phần.
+
++ độ ưu tiên (select < id < class)
+
+
++ Phân tích nội dung trang html
+ -> 4 pần chính.
+ chuột phải > folding > collapse all
+
+ Đo kicích thước : resize -> pixel.
+
+- Css kích thước chiều ngang cho container
+- Căn giưữa cho container.
+- Chiều cao cho section-normal & cả border cho nó.
+- 2 thẻ alpha & omega
+    float : left , right cho 2 cái , set lại padding-top
+- social-button :
+    float right.
+- Thẻ htext-style
+    float : left.
+    & color cho nó.
+
+ */
+body {
+    font-size: 12px;
+    color: black;
+    font-family: Tahoma, Arial, sans-serif ;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 815px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+/*#-----------id---------------*/
+#section_normal_1 {
+    height: 80px;
+    border-bottom: 5px solid #d9d9d9;
+
+}
+
+#section_normal_1 .sixteen , .columns {
+    padding-top : 18px;
+    padding-bottom: 18px;
+
+}
+
+#section_normal_1 .columns .alpha {
+    float: left;
+
+}
+#section_normal_1 .columns .omega {
+    float: right;
+
+}
+.omega .social_button {
+    float : right;
+    padding-left: 10px;
+
+
+
+}
+.omega .htext_style {
+    float : left;
+    padding: 10px;
+    font-weight: 600;
+    color:#adadad;
+}
+
+
+/*---------------SECTION NORMAL 4_2_ ------------------ */
+
+
+#section_normal_4_2 {
+    background-color: #333333;
+}
+
+#section_normal_4_2 .sixteen.columns {
+
+    display: flex;
+
+
+
+}
+
+#section_normal_4_2 .omega span:first-child {
+    color: #2dc0e8 ;
+    font-size: 20px;
+    font-weight: bolder;
+
+
+}
+#section_normal_4_2 .omega a {
+    background-color: #2dc0e8;
+    /*width: 180px;*/
+    /*height: 60px;*/
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+#section_normal_4_2 .omega p:nth-child(2) {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+
+#section_normal_4_2 .omega p:nth-child(3) {
+    color: #959595;
+    font-size: 15px;
+
+}
+
+#section_normal_4_2 .omega span:nth-child(2) {
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+/*--------------SECTION NORMAL 6------------------*/
+    #section_normal_6 {
+      height: 390px;
+
+    .envato_unbounce .container {
+        display: flex;
+    }
+
+}
+
+
+
+
+
+
+
+/*-------------.class----------------*/
