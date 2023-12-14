@@ -1,0 +1,18 @@
+CÁCH SỬ DỤNG JAVA SERVLET: 
+1. Tạo Maven project trong intellij
+2. Đặt tên cho project , click archetype chọn webapp.
+3. Tạo directory java trong main 
+4. Cài đặt tomcat . TẠO DIRECTORY JAVA TRONG Ổ C & giải nén tomcat vào đây.
+5. Chọn edit configuration 
+Add -> Tomcat server -> Tomcat local.
+Chọn đúng file tomcat có trong bước 4.
+Chọn fix và đổi tên file = cách bỏ _war. 
+6.Để server thay đổi, chúng ta cần redeploy lại sau khi thay đổi file jsp.
+7. Tạo class Hello trong directory java.
+extends HttpSerlet.
+Thêm @webServlet("\hello") -> trước cả tên class.
+sử dụng 2 phương thức doGet & doPost. Bỏ 2 dòng super đi.
+doGet : thêm dòng doPost(req, resp)
+doPost: resp.getWriter().println(CNTT).
+
+---> chạy lại và thưởng thức
