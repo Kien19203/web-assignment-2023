@@ -1,4 +1,4 @@
-package vn.ed.hcmuaf;
+package controller;
 
 import vn.ed.hcmuaf.bean.User;
 import vn.ed.hcmuaf.service.UserService;
@@ -21,7 +21,7 @@ public class LoginController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-      String email = request.getParameter("email") ;
+        String email = request.getParameter("email") ;
         String pass = request.getParameter("pass") ;
         User user = UserService.getInstance().checkLogin(email,pass);
         if(user!=null) {
